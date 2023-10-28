@@ -13,6 +13,7 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
+@import "global/global";
 @import "global/container";
 
 // Blocks
@@ -23,7 +24,39 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
-
+@import "blocks/header";
+@import "blocks/text-block";
+@import "blocks/hero";
+@import "blocks/about";
+@import "blocks/subscriptions";
+@import "blocks/term-options";
+@import "blocks/subscriptions-card";
+@import "blocks/games-block";
+@import "blocks/date-block";
+@import "blocks/slider-list";
+@import "blocks/slider-card";
+@import "blocks/slider-block";
+@import "blocks/features";
+@import "blocks/main-feature";
+@import "blocks/feature";
+@import "blocks/features-texts";
+@import "blocks/offers";
+@import "blocks/main-offer";
+@import "blocks/offer-texts";
+@import "blocks/extra-offers";
+@import "blocks/extra-item";
+@import "blocks/offers-block";
+@import "blocks/faq";
+@import "blocks/faq-tabbs";
+@import "blocks/faq-questions";
+@import "blocks/reviews";
+@import "blocks/review-card";
+@import "blocks/footer";
+@import "blocks/form-block";
+@import "blocks/contacts";
+@import "blocks/contacts-list";
+@import "blocks/contacts-item";
+@import "blocks/footer-bradcrumbs";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

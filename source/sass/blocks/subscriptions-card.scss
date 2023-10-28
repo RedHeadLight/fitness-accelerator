@@ -1,0 +1,31 @@
+.subscriptions-card {
+  list-style: none;
+  color: #102654;
+}
+
+.subscriptions-card__title {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.subscriptions-card__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.subscriptions-card__price {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #103AAE;
+}
+
+.subscriptions-card__button {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  padding: 27px 44px;
+  border: 2px solid #102654;
+}

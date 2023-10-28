@@ -1,0 +1,27 @@
+.faq {
+  color: #102654;
+}
+.faq__wrapper {
+  padding: 120px 103px;
+}
+
+.faq__title {
+  font-family: 'Alumni Sans';
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.faq__list {
+  list-style: none;
+}
+
+.faq__question-list {
+  display: grid;
+  width: 75%;
+}
+
+.faq__container {
+  display: flex;
+}

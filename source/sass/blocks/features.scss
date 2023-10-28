@@ -1,0 +1,29 @@
+.features__title {
+  font-family: 'Alumni Sans';
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  color: #102654;
+  text-align: center;
+}
+
+.features-block__item {
+  display: grid;
+}
+
+.features-block__texts {
+  display: grid;
+}
+
+.features__block  {
+  display: flex;
+}
+
+.features__container {
+  display: grid;
+  width: 30%;
+}
+
+.features__wrapper {
+  display: flex;
+}
