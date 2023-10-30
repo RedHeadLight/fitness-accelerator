@@ -1,4 +1,15 @@
 .hero {
   background-image: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
   padding-top: 86px;
+  width: 100%;
+}
+
+.hero__container {
+  padding: 0 308px 120px 103px;
+  display: flex;
+  gap: 18px;
+}
+
+.hero__text-block {
+  width: 40%;
 }

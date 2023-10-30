@@ -20,3 +20,20 @@
   line-height: 24px;
   font-weight: 300;
 }
+
+.about__text-block {
+  text-align: center;
+  width: 40%;
+}
+
+.about__video {
+  margin-top: -115px;
+  margin-left: -83px;
+}
+
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 120px 103px;
+  gap: 145px;
+}

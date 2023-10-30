@@ -7,7 +7,10 @@
 }
 
 .text-block__list {
-  margin: 0;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  text-align: end;
 }
 
 .text-block__subtitle {
@@ -24,6 +27,7 @@
   line-height: 110px;
   font-weight: 800;
   color: #FFFFFF;
+  text-align: end;
 }
 
 .text-block__button {
@@ -33,4 +37,15 @@
   line-height: 12px;
   font-weight: 700;
   padding: 27px 56px;
+  width: 100%;
+}
+
+.text-block__wrapper {
+  display: grid;
+  justify-items: end;
+}
+
+.text-block {
+  display: flex;
+  gap: 70px;
 }

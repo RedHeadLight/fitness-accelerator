@@ -30,9 +30,11 @@
             <li class="text-block__description">Групповые занятия</li>
             <li class="text-block__description">Кардио-зона</li>
           </ul>
-          <span class="text-block__subtitle">Омск</span>
-          <h2 class="text-block__title">Фитнесс центр</h2>
-          <a href="#" class="text-block__button">Купить абонемент</a>
+          <div class="text-block__wrapper">
+            <span class="text-block__subtitle">Омск</span>
+            <h2 class="text-block__title">Фитнесс центр</h2>
+            <a href="#" class="text-block__button">Купить абонемент</a>
+          </div>
         </div>
         <img src="./img/hero-banner-desktop.jpg" width="500" height="524" alt="Заглавное фото сайта">
       </div>
@@ -49,13 +51,27 @@
               несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
         </div>
-        <img class="about__banner" src="./img/about-banner-desktop.jpg" width="660" height="401"
+        <div class="about__image-wrapper">
+          <img class="about__banner" src="./img/about-banner-desktop.jpg" width="660" height="401"
           alt="фото тренажерного зала">
         <div class="about__video video">
           <img class="video__preview" src="./img/video-desktop.jpg" width="364" height="228">
-          <button class="video__play-button" type="button"></button>
+          <button class="video__play-button" type="button">
+            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.2" cx="36" cy="36" r="35" stroke="#ED0233" stroke-width="2"/>
+              <circle cx="36" cy="36" r="26" fill="url(#paint0_linear_1330_89)"/>
+              <path d="M42 36L33 41.1962L33 30.8038L42 36Z" fill="white"/>
+              <defs>
+              <linearGradient id="paint0_linear_1330_89" x1="20.2825" y1="10" x2="65.0083" y2="15.5351" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ED0233"/>
+              <stop offset="1" stop-color="#003EB7"/>
+              </linearGradient>
+              </defs>
+              </svg>
+          </button>
         </div>
       </div>
+        </div>
     </section>
     <section class="subscriptions">
       <div class="subscriptions__wrapper container">
@@ -66,25 +82,28 @@
           <li class="term-options__value">12 месяцев</li>
         </ul>
         <ul class="subscriptions__card subscriptions-card">
-          <li class="subscriptions-card">
+          <li class="subscriptions-card__item">
             <h2 class="subscriptions-card__title">С тренером</h2>
             <span class="subscriptions-card__subtitle">12 занятий</span>
-            <span class="subscriptions-card__price">5000</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
-                fill="#102654" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
-                fill="#102654" />
-            </svg>
+            <div class="subscriptions-card__price-block">
+              <span class="subscriptions-card__price">5000</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                  fill="#102654" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                  fill="#102654" />
+              </svg>
+            </div>
             <a href="#" class="subscriptions-card__button">Купить абонемент</a>
           </li>
-          <li class="subscriptions-card">
+          <li class="subscriptions-card__item">
             <h2 class="subscriptions-card__title">Дневной</h2>
             <span class="subscriptions-card__subtitle">с 8:00 до 17:00</span>
-            <span class="subscriptions-card__price">1700</span>
+            <div class="subscriptions-card__price-block">
+              <span class="subscriptions-card__price">1700</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -94,12 +113,14 @@
                 d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
                 fill="#102654" />
             </svg>
+            </div>
             <a href="#" class="subscriptions-card__button">Купить абонемент</a>
           </li>
-          <li class="subscriptions-card">
+          <li class="subscriptions-card__item">
             <h2 class="subscriptions-card__title">Полный день</h2>
             <span class="subscriptions-card__subtitle">с 8:00 до 22:00</span>
-            <span class="subscriptions-card__price">2700 </span>
+            <div class="subscriptions-card__price-block">
+              <span class="subscriptions-card__price">2700 </span>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -109,6 +130,7 @@
                 d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
                 fill="#102654" />
             </svg>
+            </div>
             <a href="#" class="subscriptions-card__button">Купить абонемент</a>
           </li>
         </ul>
@@ -119,20 +141,23 @@
         <div class="games-block__texts games-texts">
           <div class="games-texts__wrapper date-block">
             <h2 class="date-block__heading">Super games</h2>
-            <div class="date-block__wrapper">
-              <span class="date-block__title">Дата</span>
-              <div>
-                <span class="date-block__value">7</span>
-                <div class="date-block__note">Марта<br>2019</div>
-              </div>
-            </div>
-            <div class="date-block__wrapper">
-              <span class="date-block__title">Время</span>
+            <div class="date-block__cover">
               <div class="date-block__wrapper">
-                <span class="date-block__value">12:00</span>
+                <span class="date-block__title">Дата</span>
+                <div class="date-block__container">
+                  <span class="date-block__value">7</span>
+                  <div class="date-block__note">Марта<br>2019</div>
+                </div>
+              </div>
+              <div class="date-block__wrapper">
+                <span class="date-block__title">Время</span>
+                <div class="date-block__wrapper">
+                  <span class="date-block__value">12:00</span>
+                </div>
               </div>
             </div>
           </div>
+          <span class="games-block__subtitle">Ежегодные соревнования по CrossFit</span>
           <a href="#" class="games-texts__button">заполнить заявку</a>
         </div>
         <img class="games-block__banner" src="./img/games-banner-desktop.jpg" width="660" height="500"

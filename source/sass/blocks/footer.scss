@@ -4,10 +4,15 @@
 
 .footer__wrapper {
   display: flex;
+  padding: 0;
 }
 
 .footer__bradcrumbs {
   background-color: #030A1A;
   display: flex;
   padding: 41px 103px;
+}
+
+.footer__contacts {
+  width: 50%;
 }

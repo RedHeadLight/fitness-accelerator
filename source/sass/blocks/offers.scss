@@ -1,5 +1,6 @@
 .offers {
   color: #1C3374;
+  padding: 120px 103px;
 }
 
 .offers__title {
@@ -9,4 +10,9 @@
   font-weight: 600;
   line-height: 54px;
   text-align: center;
+  margin-bottom: 70px;
+}
+
+.offers__wrapper {
+  padding: 0;
 }

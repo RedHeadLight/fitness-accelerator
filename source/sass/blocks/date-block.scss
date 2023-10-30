@@ -22,3 +22,12 @@
   line-height: 14px;
   font-weight: 400;
 }
+.date-block__container {
+  display: flex;
+  gap: 6px;
+}
+
+.date-block__wrapper {
+  display: grid;
+  gap: 12px;
+}

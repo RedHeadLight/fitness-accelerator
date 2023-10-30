@@ -4,7 +4,7 @@
   font-weight: 600;
   line-height: 54px;
   color: #102654;
-  text-align: center;
+  margin-bottom: 50px;
 }
 
 .features-block__item {
@@ -17,13 +17,19 @@
 
 .features__block  {
   display: flex;
+  gap: 30px;
 }
 
 .features__container {
   display: grid;
-  width: 30%;
 }
 
 .features__wrapper {
   display: flex;
+  gap: 60px;
+}
+
+.features {
+  padding: 120px 160px;
+  text-align: center;
 }

@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   margin-bottom: -86px;
+  padding: 30px 45px;
 }
 
 .header__contacts {
@@ -8,4 +9,9 @@
   color: #FFFFFF;
   font-size: 26px;
   line-height: 26px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
 }

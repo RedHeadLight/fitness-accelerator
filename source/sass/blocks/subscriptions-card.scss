@@ -1,8 +1,13 @@
 .subscriptions-card {
   list-style: none;
   color: #102654;
+  padding: 51px 130px 120px 130px;
 }
 
+.subscriptions-card__item {
+  display: grid;
+  width: 33%;
+}
 .subscriptions-card__title {
   font-size: 26px;
   line-height: 26px;

@@ -3,4 +3,9 @@
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 40px;
+}
+
+.slider-list__card {
+  display: grid;
 }
