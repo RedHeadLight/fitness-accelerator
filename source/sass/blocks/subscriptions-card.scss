@@ -2,11 +2,20 @@
   list-style: none;
   color: #102654;
   padding: 51px 130px 120px 130px;
+
+  @media (max-width: $tablet)  {
+    padding: 100px 164px;
+  }
 }
 
 .subscriptions-card__item {
   display: grid;
   width: 33%;
+
+  @media (max-width: $tablet) {
+    padding: 56px 117px;
+    gap: 18px;
+  }
 }
 .subscriptions-card__title {
   font-size: 26px;
@@ -18,6 +27,10 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+
+  @media (max-width: $tablet)  {
+    margin-bottom: 72px;
+  }
 }
 
 .subscriptions-card__price {
@@ -33,4 +46,12 @@
   font-weight: 700;
   padding: 27px 44px;
   border: 2px solid #102654;
+}
+
+.subscriptions-card__price-block {
+
+  @media (max-width: $tablet)  {
+    display: flex;
+    align-items: center;
+  }
 }

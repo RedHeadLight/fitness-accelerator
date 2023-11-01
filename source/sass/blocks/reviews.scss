@@ -10,6 +10,11 @@
 .reviews__wrapper {
   width: 40%;
   margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    padding: 60px 65px;
+  }
 }
 
 .reviews__slider  {
@@ -19,4 +24,8 @@
 
 .reviews {
   padding: 120px 0;
+
+  @media (max-width: $tablet)  {
+    padding: 100px 45px;
+  }
 }

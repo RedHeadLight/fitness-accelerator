@@ -1,6 +1,10 @@
 .games-block {
   color: #FFF;
   padding: 120px 103px;
+
+  @media (max-width: $tablet) {
+    padding: 100px 45px;
+  }
 }
 
 .games-block__texts {

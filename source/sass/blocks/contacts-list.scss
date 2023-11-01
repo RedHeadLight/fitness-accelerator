@@ -1,10 +1,18 @@
 .contacts-list__wrapper {
   display: grid;
   gap: 15px;
+
+  @media (max-width: $tablet) {
+    gap: 27px;
+  }
 }
 
 .contacts-list__item  {
   display: grid;
+
+  @media (max-width: $tablet) {
+    gap: 11px;
+  }
 }
 
 .contacts-list {

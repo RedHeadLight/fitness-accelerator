@@ -3,6 +3,11 @@
 }
 .faq__wrapper {
   padding: 120px 103px;
+
+  @media (max-width: $tablet)  {
+    padding: 100px 45px;
+    text-align: center;
+  }
 }
 
 .faq__title {
@@ -20,8 +25,20 @@
 .faq__question-list {
   display: grid;
   width: 75%;
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: $tablet)  {
+    text-align: initial;
+    gap: 50px;
+  }
 }
 
 .faq__container {
   display: flex;
+
+  @media (max-width: $tablet)  {
+    display: grid;
+    gap: 40px;
+  }
 }

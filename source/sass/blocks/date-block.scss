@@ -3,6 +3,11 @@
   font-size: 82px;
   line-height: 76px;
   font-weight: 600;
+
+  @media (max-width: $tablet) {
+    font-size: 48px;
+  line-height: 48px;
+  }
 }
 
 .date-block__title {

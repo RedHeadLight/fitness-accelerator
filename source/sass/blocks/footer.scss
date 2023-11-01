@@ -1,10 +1,18 @@
 .footer__form {
   width: 50%;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .footer__wrapper {
   display: flex;
   padding: 0;
+
+  @media (max-width: $tablet) {
+    display: grid;
+  }
 }
 
 .footer__bradcrumbs {
@@ -15,4 +23,8 @@
 
 .footer__contacts {
   width: 50%;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }

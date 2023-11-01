@@ -3,4 +3,9 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }

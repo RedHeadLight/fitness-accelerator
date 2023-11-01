@@ -3,6 +3,11 @@
   width: 25%;
   gap: 10px;
   margin: 0;
+
+  @media (max-width: $tablet)  {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .faq-tabbs__item  {
