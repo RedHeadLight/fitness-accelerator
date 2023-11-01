@@ -4,4 +4,46 @@
   @media (max-width: $tablet)  {
     padding: 30px 44px 35px 35px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 45px 64px 40px 64px;
+    justify-items: center;
+  }
+}
+
+.extra-item__title {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+
+  @media (max-width: $mobile) {
+    padding: 45px 64px 40px 64px;
+      font-size: 22px;
+      line-height: 22px;
+  }
+}
+
+.extra-item__subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+
+  @media (max-width: $tablet)  {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.extra-item__button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
 }

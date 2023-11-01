@@ -5,6 +5,10 @@
   @media (max-width: $tablet) {
     gap: 27px;
   }
+
+  @media (max-width: $mobile) {
+    gap: 28px;
+  }
 }
 
 .contacts-list__item  {

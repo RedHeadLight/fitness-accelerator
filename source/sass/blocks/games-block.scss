@@ -5,6 +5,10 @@
   @media (max-width: $tablet) {
     padding: 100px 45px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 70px 15px;
+  }
 }
 
 .games-block__texts {
@@ -14,15 +18,28 @@
   justify-content: center;
   padding: 80px;
   justify-items: center;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    padding: 40px;
+  }
 }
 
 .games-block__banner {
   width: 60%;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .games-block__container {
   display: flex;
   padding: 0;
+
+  @media (max-width: $mobile) {
+    display: grid;
+  }
 }
 
 .games-block__subtitle {
@@ -30,4 +47,9 @@
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 55px;
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

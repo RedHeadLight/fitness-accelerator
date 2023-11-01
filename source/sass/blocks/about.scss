@@ -8,6 +8,11 @@
     font-size: 42px;
   line-height: 42px;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .about {
@@ -22,6 +27,10 @@
   @media (max-width: $tablet) {
     font-size: 20px;
   line-height: 20px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 18px;
   }
 }
 
@@ -40,8 +49,11 @@
     width: 100%;
     padding: 100px 133px 36px 133px;
   }
-}
 
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
 .about__video {
   margin-top: -115px;
   margin-left: -83px;
@@ -49,6 +61,11 @@
   @media (max-width: $tablet) {
     margin-top: -83px;
     margin-left: 251px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 40px;
+    margin-left: 0;
   }
 }
 
@@ -61,6 +78,10 @@
   @media (max-width: $tablet) {
     display: grid;
     padding: 0 45px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 70px 26px 50px 15px;
   }
 }
 

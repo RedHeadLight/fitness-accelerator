@@ -4,4 +4,15 @@
   @media (max-width: $tablet) {
     padding: 0 45px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 0 47px;
+  }
+}
+
+.slider__wrapper {
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
 }

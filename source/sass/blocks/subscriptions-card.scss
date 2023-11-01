@@ -6,6 +6,10 @@
   @media (max-width: $tablet)  {
     padding: 100px 164px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 50px 42px;
+  }
 }
 
 .subscriptions-card__item {
@@ -16,11 +20,21 @@
     padding: 56px 117px;
     gap: 18px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 0;
+    gap: 15px;
+  }
 }
 .subscriptions-card__title {
   font-size: 26px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .subscriptions-card__subtitle {
@@ -31,6 +45,12 @@
   @media (max-width: $tablet)  {
     margin-bottom: 72px;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 62px;
+  }
 }
 
 .subscriptions-card__price {
@@ -38,6 +58,11 @@
   line-height: 90px;
   font-weight: 700;
   color: #103AAE;
+
+  @media (max-width: $mobile) {
+    font-size: 48px;
+    line-height: 72px;
+  }
 }
 
 .subscriptions-card__button {
@@ -46,6 +71,7 @@
   font-weight: 700;
   padding: 27px 44px;
   border: 2px solid #102654;
+  text-transform: uppercase;
 }
 
 .subscriptions-card__price-block {

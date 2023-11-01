@@ -3,6 +3,10 @@
   background-color: #ED0233;
   color: #FFF;
   padding: 40px 45px 45px 45px;
+
+  @media (max-width: $mobile) {
+    justify-items: center;
+  }
 }
 
 .main-offer {
@@ -11,5 +15,9 @@
 
   @media (max-width: $tablet) {
     width: 100%;
+  }
+
+  @media (max-width: $mobile) {
+    display: grid;
   }
 }

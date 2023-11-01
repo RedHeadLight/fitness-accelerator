@@ -10,4 +10,9 @@
     line-height: 42px;
     text-align: center;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }

@@ -8,6 +8,12 @@
     font-size: 24px;
     line-height: 24px;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 9px;
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .offer-texts__value {
@@ -15,6 +21,12 @@
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
 
 .offer-texts__description {
@@ -22,6 +34,12 @@
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .offer-texts__button {

@@ -12,4 +12,8 @@
   text-transform: uppercase;
   padding: 27px 56px;
   border: 2px solid #FFF;
+
+  @media (max-width: $mobile) {
+    padding: 22px 47px;
+  }
 }

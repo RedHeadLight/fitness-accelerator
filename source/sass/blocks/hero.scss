@@ -12,4 +12,8 @@
 
 .hero__text-block {
   width: 40%;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 }

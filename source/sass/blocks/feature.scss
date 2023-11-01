@@ -4,6 +4,11 @@
   font-weight: 700;
   line-height: 70px;
   background-color: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+
+  @media (max-width: $mobile) {
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
 
 .feature__option {
@@ -12,4 +17,8 @@
   font-weight: 400;
   line-height: 22px;
   text-align: left;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
 }

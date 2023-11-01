@@ -4,6 +4,11 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .text-block__list {
@@ -24,6 +29,12 @@
     font-size: 42px;
     line-height: 42px;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 51px;
+  }
 }
 
 .text-block__title {
@@ -34,9 +45,15 @@
   color: #FFFFFF;
   text-align: end;
   margin: 0;
+
   @media (max-width: $tablet) {
     font-size: 72px;
     line-height: 85px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 62px;
+    line-height: 70px;
   }
 }
 
@@ -50,6 +67,10 @@
   width: 100%;
   margin-top: 50px;
   text-align: center;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 92px;
+  }
 }
 
 .text-block__wrapper {
@@ -60,4 +81,11 @@
 .text-block {
   display: flex;
   gap: 70px;
+}
+
+.text-block img {
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }

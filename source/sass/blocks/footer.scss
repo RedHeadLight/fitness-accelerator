@@ -19,6 +19,12 @@
   background-color: #030A1A;
   display: flex;
   padding: 41px 103px;
+
+  @media (max-width: $mobile) {
+    display: grid;
+    gap: 30px;
+    padding: 30px 15px 45px 15px;
+  }
 }
 
 .footer__contacts {

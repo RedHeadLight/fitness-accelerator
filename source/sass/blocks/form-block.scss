@@ -8,6 +8,10 @@
     padding: 100px 133px;
     gap: 30px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 70px 15px;
+  }
 }
 
 .form-block__title {
@@ -20,6 +24,11 @@
 
   @media (max-width: $tablet) {
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
@@ -40,6 +49,7 @@
 .form-block__wrapper input {
   background-color: #102654;
   border-bottom: 1px solid #74819C;
+  color: #FFFF;
 
   @media (max-width: $tablet) {
     width: 50%;
@@ -60,5 +70,9 @@
 
   @media (max-width: $tablet) {
     margin-top: 35px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 22px 106px;
   }
 }

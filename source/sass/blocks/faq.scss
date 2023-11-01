@@ -8,6 +8,10 @@
     padding: 100px 45px;
     text-align: center;
   }
+
+  @media (max-width: $mobile) {
+    padding: 70px 15px;
+  }
 }
 
 .faq__title {
@@ -16,6 +20,12 @@
   font-style: normal;
   font-weight: 600;
   line-height: 54px;
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 37px;
+  }
 }
 
 .faq__list {
@@ -31,6 +41,11 @@
   @media (max-width: $tablet)  {
     text-align: initial;
     gap: 50px;
+  }
+
+  @media (max-width: $mobile) {
+    gap: 20px;
+    width: 100%;
   }
 }
 

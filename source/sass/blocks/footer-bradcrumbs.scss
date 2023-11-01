@@ -15,4 +15,8 @@
   margin: 0;
   display: flex;
   gap: 10px;
+
+  @media (max-width: $mobile) {
+    justify-content: center;
+  }
 }

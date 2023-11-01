@@ -10,6 +10,11 @@
     font-size: 42px;
     line-height: 42px;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .features-block__item {
@@ -28,6 +33,11 @@
     margin: 0 auto;
     gap: 14px;
   }
+
+  @media (max-width: $mobile) {
+    display: grid;
+    justify-items: center;
+  }
 }
 
 .features__container {
@@ -36,6 +46,11 @@
   @media (max-width: $tablet) {
     display: flex;
     gap: 50px;
+  }
+
+  @media (max-width: $mobile) {
+    display: grid;
+    gap: 35px;
   }
 }
 
@@ -54,5 +69,16 @@
 
   @media (max-width: $tablet) {
     padding: 100px 45px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 70px 45px 42px 49px;
+  }
+}
+
+.features__cover {
+
+  @media (max-width: $mobile) {
+    padding: 0;
   }
 }

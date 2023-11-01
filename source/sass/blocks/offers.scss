@@ -5,6 +5,10 @@
   @media (max-width: $tablet)  {
     padding: 100px 45px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 70px 15px;
+  }
 }
 
 .offers__title {
@@ -20,6 +24,11 @@
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
