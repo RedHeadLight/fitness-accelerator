@@ -1,5 +1,7 @@
 .extra-item {
   padding: 30px 0 35px 35px;
+  background: linear-gradient(135deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
+  position: relative;
 
   @media (max-width: $tablet)  {
     padding: 30px 44px 35px 35px;
@@ -8,6 +10,21 @@
   @media (max-width: $mobile) {
     padding: 45px 64px 40px 64px;
     justify-items: center;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: 7px;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    background-color: #FFF;
+  }
+
+  & > *{
+    z-index: 1;
+    position: relative;
   }
 }
 

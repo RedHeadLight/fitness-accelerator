@@ -12,8 +12,17 @@
 
 .hero__text-block {
   width: 40%;
-
+  @media (max-width: $tablet) {
+    width: 50%;
+  }
   @media (max-width: $mobile) {
     width: 100%;
+  }
+}
+
+.hero__container img {
+
+  @media (max-width: $tablet) {
+    width: calc(50% - 20px);
   }
 }

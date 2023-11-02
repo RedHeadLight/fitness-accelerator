@@ -3,7 +3,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
-  background-color: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+  background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (max-width: $mobile) {
     font-size: 64px;

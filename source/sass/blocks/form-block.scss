@@ -47,12 +47,24 @@
 }
 
 .form-block__wrapper input {
+  flex-grow: 1;
   background-color: #102654;
-  border-bottom: 1px solid #74819C;
+  border: 1px solid #74819C;
   color: #FFFF;
+  padding: 9px 0;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
 
   @media (max-width: $tablet) {
     width: 50%;
+  }
+
+  &:focus {
+    border-top-color: #74819C;
+    border-right-color: #74819C;
+    border-left-color: #74819C;
+    outline: none;
   }
 }
 

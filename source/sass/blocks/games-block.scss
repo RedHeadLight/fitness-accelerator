@@ -15,9 +15,8 @@
   background-color: #ED0233;
   width: 40%;
   display: grid;
-  justify-content: center;
   padding: 80px;
-  justify-items: center;
+  align-items: center;
 
   @media (max-width: $mobile) {
     width: 100%;
