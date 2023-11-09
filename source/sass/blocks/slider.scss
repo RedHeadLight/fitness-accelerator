@@ -1,5 +1,5 @@
 .slider {
-  padding: 0 47px 120px 47px;
+  overflow-x: hidden;
 
   @media (max-width: $tablet) {
     padding: 0 45px;
@@ -11,6 +11,7 @@
 }
 
 .slider__wrapper {
+  padding: 0 103px;
 
   @media (max-width: $mobile) {
     padding: 0;

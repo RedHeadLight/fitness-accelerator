@@ -5,15 +5,17 @@
   font-style: normal;
   font-weight: 600;
   line-height: 54px;
+  margin: 0;
+  margin-top: 81px;
+  margin-bottom: 50px;
 }
 
 .reviews__wrapper {
-  width: 40%;
+  width: 46%;
   margin: 0 auto;
 
   @media (max-width: $tablet) {
     width: 100%;
-    padding: 60px 65px;
   }
 
   @media (max-width: $mobile) {
@@ -27,7 +29,6 @@
 }
 
 .reviews {
-  padding: 120px 0;
 
   @media (max-width: $tablet)  {
     padding: 100px 45px;

@@ -4,8 +4,59 @@
   font-weight: 400;
   color: #FFF;
   text-align: center;
+  margin-top: -12px;
 }
 
-.slider-card__foto {
+.slider-card {
+  position: relative;
+
+  &:hover, &:focus {
+    .slider-card__wrapper {
+      display: block;
+    }
+  }
+}
+
+.slider-card__wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 45px 41px 50px 42px;
+  background-color: rgba(16, 38, 84, 0.89);
+  display: none;
+}
+
+.slider-card__name {
+  text-align: center;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.slider-card__post {
+  text-align: center;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #B6BDCC;
+}
+
+.slider-card__desc {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FFF;
+  margin-top: 33px;
+}
+
+.slider-card img {
   margin-bottom: -40px;
 }

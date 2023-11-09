@@ -16,8 +16,6 @@
   }
 
   @media (max-width: $mobile) {
-    display: grid;
-    gap: 30px;
-    justify-items: center;
+    display: block;
   }
 }

@@ -1,9 +1,9 @@
 .main-offer__texts {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: #ED0233;
   color: #FFF;
   padding: 40px 45px 45px 45px;
-  align-items: center;
 
   @media (max-width: $mobile) {
     justify-items: center;
@@ -16,9 +16,19 @@
 
   @media (max-width: $tablet) {
     width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
   }
 
   @media (max-width: $mobile) {
-    display: grid;
+    display: block;
+  }
+}
+
+.main-offer img {
+
+  @media (max-width: $tablet) {
+    display: block;
+    width: 100%;
   }
 }

@@ -3,6 +3,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
+  padding-bottom: 11px;
 
   @media (max-width: $tablet) {
     font-size: 18px;
@@ -12,5 +13,43 @@
   @media (max-width: $mobile) {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+.term-options__value button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: rgba(16, 38, 84, 0.5);
+}
+
+.term-options__value--current {
+  position: relative;
+
+  button {
+  color: #102654;
+
+    &::before {
+      content: " ";
+      background-color: #D10A42;
+      width: 67px;
+      height: 1px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+  }
+}
+
+.term-options__value button:hover {
+  color: #102654;
+}
+
+.term-options__value button:disabled {
+  opacity: 0.3;
+  color: #102654;
+
+  &::before {
+    background-color: #102654;
   }
 }

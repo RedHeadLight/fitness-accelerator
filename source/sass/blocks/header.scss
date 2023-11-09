@@ -1,7 +1,11 @@
 .header {
   width: 100%;
   margin-bottom: -86px;
-  padding: 30px 45px;
+  padding: 30px 103px;
+
+  @media (max-width: $tablet) {
+    padding: 30px 45px;
+  }
 
   @media (max-width: $mobile) {
     padding: 16px 15px;
@@ -13,6 +17,22 @@
   color: #FFFFFF;
   font-size: 26px;
   line-height: 26px;
+
+  &:hover {
+    color: #1C3374;
+  }
+
+  &:focus {
+    color: #1C3374;
+  }
+
+  &:active {
+    border-bottom: 1px solid  #102654;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet) {
     font-size: 24px;

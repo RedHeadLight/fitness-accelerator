@@ -1,6 +1,10 @@
 .games-texts__wrapper {
   display: flex;
   gap: 68px;
+
+  @media (max-width: $tablet) {
+    gap: 40px;
+  }
 }
 
 .games-texts__button {
@@ -12,6 +16,33 @@
   text-transform: uppercase;
   padding: 27px 56px;
   border: 2px solid #FFF;
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(128deg,#d10a42 0,#0041ca 45.58%);
+    color: #FFF;
+  }
+
+  &:focus {
+    background: linear-gradient(128deg,#d10a42 0,#0041ca 45.58%);
+    color: #FFF;
+  }
+
+  &:active {
+    background: linear-gradient(128deg,#d10a42 0,#0041ca 45.58%);
+    color: #FFF;
+    opacity: 0.7;
+  }
+
+  &:disabled, &--disabled {
+    background-color: #FFF;
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 22px 46px;
+    font-weight: 400;
+  }
 
   @media (max-width: $mobile) {
     padding: 22px 47px;

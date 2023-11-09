@@ -5,9 +5,18 @@
 }
 
 .hero__container {
-  padding: 0 0 120px 103px;
+  padding: 0 308px 120px 81px;
   display: flex;
   gap: 70px;
+
+  @media (max-width: $tablet) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 15px;
+  }
 }
 
 .hero__text-block {
@@ -17,12 +26,14 @@
   }
   @media (max-width: $mobile) {
     width: 100%;
+    padding-bottom: 186px;
   }
 }
 
 .hero__container img {
+  width: 100%;
 
-  @media (max-width: $tablet) {
-    width: calc(50% - 20px);
+  @media (max-width: $mobile) {
+    display: none;
   }
 }

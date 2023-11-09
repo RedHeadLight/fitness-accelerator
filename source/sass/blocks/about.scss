@@ -1,66 +1,15 @@
-.about-texts__title {
-  font-family: 'Alumni Sans';
-  font-size: 54px;
-  line-height: 54px;
-  font-weight: 700;
-
-  @media (max-width: $tablet) {
-    font-size: 42px;
-  line-height: 42px;
-  }
-
-  @media (max-width: $mobile) {
-    font-size: 32px;
-    line-height: 32px;
-  }
-}
-
 .about {
   color: #102654;
 }
 
-.about-texts__subtitle {
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 400;
-
-  @media (max-width: $tablet) {
-    font-size: 20px;
-  line-height: 20px;
-  }
-
-  @media (max-width: $mobile) {
-    font-size: 18px;
-  }
-}
-
-.about-texts__decription p {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-}
-
-.about__text-block {
-  text-align: center;
-  width: 40%;
-
-  @media (max-width: $tablet) {
-    margin: 0 auto;
-    width: 100%;
-    padding: 100px 133px 36px 133px;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 0;
-  }
-}
 .about__video {
-  margin-top: -115px;
-  margin-left: -83px;
+  margin-top: -118px;
+  margin-left: -171px;
+  position: relative;
 
   @media (max-width: $tablet) {
-    margin-top: -83px;
-    margin-left: 251px;
+    margin-top: -122px;
+    margin-left: 144px;
   }
 
   @media (max-width: $mobile) {
@@ -71,7 +20,7 @@
 
 .about__wrapper {
   display: flex;
-  align-items: center;
+  align-items: initial;
   padding: 120px 103px;
   gap: 145px;
 
@@ -86,6 +35,8 @@
 }
 
 .about__image-wrapper {
+  margin-right: -224px;
+
 
   @media (max-width: $tablet) {
     margin: 0 auto;

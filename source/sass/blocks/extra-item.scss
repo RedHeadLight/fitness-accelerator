@@ -10,6 +10,7 @@
   @media (max-width: $mobile) {
     padding: 45px 64px 40px 64px;
     justify-items: center;
+    margin-bottom: 30px;
   }
 
   &::before {
@@ -33,6 +34,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
+  display: table;
+  margin-bottom: 10px;
 
   @media (max-width: $mobile) {
     padding: 45px 64px 40px 64px;
@@ -46,6 +49,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
+  display: table;
 
   @media (max-width: $tablet)  {
     margin-bottom: 45px;
@@ -63,4 +67,23 @@
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
+  margin-top: auto;
+  align-self: flex-start;
+  display: table;
+  padding: 10px;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    width: 99px;
+    border: 1px solid #1C3374;
+    text-decoration: none;
+  }
+
+  &:disabled, &--disabled {
+    opacity: 0.3;
+    }
 }

@@ -28,15 +28,26 @@
 .features__block  {
   display: flex;
   gap: 30px;
+  margin-bottom: 107px;
 
   @media (max-width: $tablet) {
     margin: 0 auto;
     gap: 14px;
+    width: 400px;
   }
 
   @media (max-width: $mobile) {
     display: grid;
     justify-items: center;
+    width: 100%;
+  }
+
+  & + & {
+    border-top: 2px solid rgba(209, 10, 66, 0.20);
+
+    @media (max-width: $tablet) {
+      border-top: none;
+    }
   }
 }
 
@@ -51,12 +62,14 @@
   @media (max-width: $mobile) {
     display: grid;
     gap: 35px;
+    padding: 70px 45px 42px 49px;
   }
 }
 
 .features__wrapper {
   display: flex;
   gap: 60px;
+  position: relative;
 
   @media (max-width: $tablet) {
     flex-direction: column;
@@ -64,7 +77,6 @@
 }
 
 .features {
-  padding: 120px 160px;
   text-align: center;
 
   @media (max-width: $tablet) {
@@ -72,13 +84,15 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 70px 45px 42px 49px;
+    padding: 0;
   }
 }
 
 .features__cover {
+  padding: 120px 160px;
+  margin-top: 86px;
 
   @media (max-width: $mobile) {
-    padding: 0;
+    padding: 0 32px;
   }
 }

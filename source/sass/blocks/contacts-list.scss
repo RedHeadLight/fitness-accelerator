@@ -1,6 +1,7 @@
 .contacts-list__wrapper {
   display: grid;
   gap: 15px;
+  position: relative;
 
   @media (max-width: $tablet) {
     gap: 27px;
@@ -9,10 +10,20 @@
   @media (max-width: $mobile) {
     gap: 28px;
   }
+
+  & + &::after {
+    content: " ";
+    background-color: #74819C;
+    width: 1px;
+    height: 117px;
+    position: absolute;
+    left: -55px;
+    top: 45px;
+  }
 }
 
 .contacts-list__item  {
-  display: grid;
+  display: block;
 
   @media (max-width: $tablet) {
     gap: 11px;

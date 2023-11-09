@@ -4,6 +4,7 @@
   padding: 0;
   display: flex;
   gap: 40px;
+  margin-top: 60px;
 
   @media (max-width: $tablet) {
     gap: 32px;
