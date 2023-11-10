@@ -3113,12 +3113,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 40px;
   margin-top: 43px;
 }
 @media (max-width: 1365px) {
   .slider-list {
-    gap: 32px;
     margin: 38px auto 0;
     max-width: 568px;
   }
@@ -3252,6 +3250,21 @@ body {
     font-size: 32px;
     line-height: 32px;
   }
+}
+
+.slider-block__wrapper {
+  position: relative;
+}
+
+.slider-block__buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
 }
 
 .features__title {

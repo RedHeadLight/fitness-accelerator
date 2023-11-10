@@ -2,12 +2,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  // display: flex;
-  gap: 40px;
   margin-top: 43px;
 
   @media (max-width: $tablet) {
-    gap: 32px;
     margin: 38px auto 0;
     max-width: 568px;
   }
