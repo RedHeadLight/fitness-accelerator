@@ -1,3 +1,9 @@
+.footer {
+  @media (max-width: $mobile) {
+    overflow: hidden;
+  }
+}
+
 .footer__form {
   width: 50%;
 
@@ -8,7 +14,6 @@
 
 .footer__wrapper {
   display: flex;
-  padding: 86px 0;
 
   @media (max-width: $tablet) {
     display: grid;
@@ -17,16 +22,18 @@
 
 .footer__bradcrumbs {
   background-color: #030A1A;
-  display: flex;
-  padding: 41px 103px;
+  padding-top: 38px;
+  padding-bottom: 41px;
 
   @media (max-width: $tablet) {
-    padding: 45px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   @media (max-width: $mobile) {
     display: block;
-    padding: 30px 15px 45px 15px;
+    padding-top: 27px;
+    padding-bottom: 45px;
   }
 }
 

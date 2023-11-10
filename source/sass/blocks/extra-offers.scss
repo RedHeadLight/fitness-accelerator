@@ -4,6 +4,10 @@
   display: grid;
   gap: 40px;
   width: 60%;
+
+  @media (max-width: $tablet)  {
+    gap: 30px;
+  }
 }
 
 .extra-offers__item {
@@ -11,7 +15,6 @@
   flex-direction: column;
 
   @media (max-width: $tablet)  {
-    gap: 10px;
     width: 50%;
   }
 

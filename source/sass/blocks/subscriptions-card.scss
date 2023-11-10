@@ -2,28 +2,43 @@
   list-style: none;
   color: #102654;
   z-index: 1;
-  position: relative;padding: 0;
+  position: relative;
+  padding: 0;
 
   @media (max-width: $tablet) {
-    padding: 65px 117px;
+    padding: 10px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 10px 0;
   }
 }
 
 .subscriptions-card__item {
   display: grid;
-  width: 33%;
-  padding: 65px 77px;
+  width: calc((100% - 80px) / 3);
+  padding: 46px 78px 66px;
   background-color:  #FFF;
 
   @media (max-width: $tablet) {
     gap: 18px;
     width: 100%;
-    padding: 65px 174px;
+    padding: 65px 117px;
   }
 
   @media (max-width: $mobile) {
-    padding: 50px 42px;
+    padding: 50px 42px 52px;
     gap: 15px;
+  }
+
+  & + & {
+    @media (max-width: $tablet) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: 35px;
+    }
   }
 }
 
@@ -49,11 +64,16 @@
 
 .subscriptions-card__title {
   font-size: 26px;
-  line-height: 26px;
+  line-height: 1;
   font-weight: 700;
   margin-top: 21px;
   margin-left: -1px;
   margin-bottom: 7px;
+
+  @media (max-width: $tablet) {
+    margin: 0;
+    font-size: 24px;
+  }
 
   @media (max-width: $mobile) {
     font-size: 22px;
@@ -65,17 +85,16 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  margin-bottom: 73px;
-  margin-left: -41px;
+  margin-bottom: 69px;
 
   @media (max-width: $tablet)  {
-    margin-bottom: 72px;
+    margin-bottom: 57px;
   }
 
   @media (max-width: $mobile) {
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 62px;
+    margin-bottom: 48px;
   }
 }
 
@@ -84,7 +103,6 @@
   line-height: 90px;
   font-weight: 700;
   color: #103AAE;
-  margin-left: -5px;
   margin-right: 12px;
 
   @media (max-width: $mobile) {
@@ -97,10 +115,20 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
-  padding: 27px 44px;
+  padding: 25px 10px;
   border: 2px solid #102654;
   text-transform: uppercase;
   width: 205px;
+  letter-spacing: 0.6px;
+
+  @media (max-width: $tablet) {
+    margin-top: 4px;
+    padding: 20px 10px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 7px;
+  }
 
   &:hover {
     background: linear-gradient(128deg,#d10a42 0,#0041ca 45.58%);
@@ -128,18 +156,19 @@
   position: relative;
   justify-content: center;
   z-index: 1;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 
   @media (max-width: $tablet)  {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
   }
 
   &::before {
     content: attr(data-price);
     position: absolute;
     left: 50%;
-    top: -40px;
+    top: -53px;
     font-size: 100px;
     line-height: 150px;
     opacity: 0.48;
@@ -147,5 +176,9 @@
     z-index: -1;
     transform: translateX(-50%);
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
+
+    @media (max-width: $mobile)  {
+      font-size: 80px;
+    }
   }
 }

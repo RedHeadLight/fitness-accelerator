@@ -5,10 +5,12 @@
   font-weight: 600;
   margin: 0;
   text-transform: uppercase;
+  letter-spacing: 2.46px;
 
   @media (max-width: $tablet) {
     font-size: 48px;
     line-height: 46px;
+    letter-spacing: 1.44px;
   }
 
   @media (max-width: $mobile) {
@@ -45,16 +47,19 @@
 
 .date-block__note {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 16px;
   font-weight: 400;
+  margin-top: 5px;
 
   @media (max-width: $tablet) {
     font-size: 10px;
     line-height: 10px;
+    margin-top: 2px;
   }
 }
 .date-block__container {
   display: flex;
+  align-items: flex-start;
   gap: 6px;
 }
 
@@ -62,4 +67,10 @@
   display: grid;
   gap: 12px;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet) {
+    align-items: flex-start;
+    gap: 0px;
+    margin-bottom: 8px;
+  }
 }

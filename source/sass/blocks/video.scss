@@ -87,5 +87,23 @@
 
 .video {
   display: table;
-  position: relative;
+}
+
+.video picture,
+.video img {
+  display: block;
+  width: 364px;
+  height: 228px;
+  object-fit: cover;
+  flex-shrink: 0;
+
+  @media (max-width: $tablet) {
+    width: 265px;
+    height: 167px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    aspect-ratio: 320/167;
+  }
 }

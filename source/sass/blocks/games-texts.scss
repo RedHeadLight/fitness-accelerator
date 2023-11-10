@@ -3,7 +3,7 @@
   gap: 68px;
 
   @media (max-width: $tablet) {
-    gap: 40px;
+    gap: 36px;
   }
 }
 
@@ -14,9 +14,19 @@
   line-height: 12px;
   color: #FFFF;
   text-transform: uppercase;
-  padding: 27px 56px;
+  padding: 27px 10px;
   border: 2px solid #FFF;
   text-align: center;
+  letter-spacing: 0.6px;
+
+  @media (max-width: $tablet) {
+    padding: 20px 10px;
+    font-weight: 400;
+  }
+
+  @media (max-width: $mobile) {
+
+  }
 
   &:hover {
     background: linear-gradient(128deg,#d10a42 0,#0041ca 45.58%);
@@ -37,14 +47,5 @@
   &:disabled, &--disabled {
     background-color: #FFF;
     opacity: 0.3;
-  }
-
-  @media (max-width: $tablet) {
-    padding: 22px 46px;
-    font-weight: 400;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 22px 47px;
   }
 }

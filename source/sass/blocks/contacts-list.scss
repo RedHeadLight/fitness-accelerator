@@ -1,14 +1,11 @@
 .contacts-list__wrapper {
-  display: grid;
-  gap: 15px;
   position: relative;
+  width: 170px;
 
   @media (max-width: $tablet) {
-    gap: 27px;
   }
 
   @media (max-width: $mobile) {
-    gap: 28px;
   }
 
   & + &::after {
@@ -17,8 +14,13 @@
     width: 1px;
     height: 117px;
     position: absolute;
-    left: -55px;
-    top: 45px;
+    left: -69px;
+    top: 0;
+
+    @media (max-width: $tablet) {
+      height: 137px;
+      left: -60px;
+    }
   }
 }
 
@@ -26,7 +28,14 @@
   display: block;
 
   @media (max-width: $tablet) {
-    gap: 11px;
+  }
+
+  & + & {
+    margin-top: 14px;
+
+    @media (max-width: $tablet) {
+      margin-top: 27px;
+    }
   }
 }
 

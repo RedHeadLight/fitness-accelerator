@@ -1,9 +1,8 @@
 .faq-tabbs {
   display: grid;
-  width: 23%;
+  width: 260px;
+  flex-shrink: 0;
   gap: 8px;
-  margin: auto;
-  margin-top: 15px;
 
   @media (max-width: $tablet)  {
     display: flex;
@@ -16,17 +15,30 @@
     grid-template-columns: 1fr 1fr;
     display: grid;
     width: 100%;
+    gap: 8px;
   }
 }
 
 .faq-tabbs__item {
   border: 1px solid rgba(16, 38, 84, 0.20);
-  background-color: #FFFF;
+  background-color: transparent;
   padding: 18px;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   text-align: center;
+
+  @media (max-width: $tablet) {
+    width: 162px;
+    padding: 16px 10px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 13px;
+    width: auto;
+  }
 
   &:hover {
     border: 1px solid #102654;
@@ -43,16 +55,6 @@
 
   &:disabled, &--disabled {
     color: #C8C9CC;
-  }
-
-  @media (max-width: $tablet) {
-    width: 162px;
-  }
-
-  @media (max-width: $mobile) {
-    font-size: 16px;
-    line-height: 16px;
-    padding: 14px;
   }
 }
 

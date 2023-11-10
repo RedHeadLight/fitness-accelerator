@@ -1,14 +1,14 @@
 .extra-item {
-  padding: 30px 0 35px 35px;
+  padding: 30px 0 39px 35px;
   background: linear-gradient(135deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
   position: relative;
 
   @media (max-width: $tablet)  {
-    padding: 30px 44px 35px 35px;
+    padding: 30px 44px 40px 35px;
   }
 
   @media (max-width: $mobile) {
-    padding: 45px 64px 40px 64px;
+    padding: 45px;
     justify-items: center;
     margin-bottom: 30px;
   }
@@ -33,14 +33,17 @@
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1;
   display: table;
   margin-bottom: 10px;
 
+  @media (max-width: $tablet) {
+    font-size: 24px;
+  }
+
   @media (max-width: $mobile) {
-    padding: 45px 64px 40px 64px;
-      font-size: 22px;
-      line-height: 22px;
+    font-size: 22px;
+    margin: 0 auto 10px;
   }
 }
 
@@ -58,6 +61,8 @@
   @media (max-width: $mobile) {
     font-size: 14px;
     line-height: 22px;
+    max-width: 160px;
+    margin: 0 auto;
   }
 }
 
@@ -70,17 +75,34 @@
   margin-top: auto;
   align-self: flex-start;
   display: table;
-  padding: 10px;
-  text-decoration: underline;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  color: #1C3374;
+
+  @media (max-width: $mobile) {
+    margin: 30px auto 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    border-bottom: 1px solid currentColor;
+  }
 
   &:hover {
     opacity: 0.8;
   }
 
   &:focus {
-    width: 99px;
-    border: 1px solid #1C3374;
-    text-decoration: none;
+    &::before {
+      width: calc(100% + 10px);
+      left: -5px;
+      height: calc(100% + 10px);
+      border: 1px solid currentColor;
+    }
   }
 
   &:disabled, &--disabled {

@@ -1,6 +1,10 @@
 .features-texts {
   color: #102654;
   text-align: initial;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .features-texts__title {
@@ -8,8 +12,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin: 0;
-  margin-bottom: 19px;
+  margin: 0 0 8px;
 
   @media (max-width: $tablet) {
     font-size: 20px;
@@ -26,11 +29,23 @@
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
-  margin-top: -49px;
-  width: 104%;
+
+  @media (max-width: $tablet) {
+    margin-top: 3px;
+  }
 
   @media (max-width: $mobile) {
     font-size: 14px;
     line-height: 22px;
+    margin: 2px auto 0;
+    max-width: 227px;
+  }
+}
+
+.features__block--top:first-child {
+  @media (max-width: $mobile) {
+    .features-texts__subtitle {
+      max-width: 180px;
+    }
   }
 }

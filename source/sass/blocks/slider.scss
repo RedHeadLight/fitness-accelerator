@@ -1,19 +1,11 @@
 .slider {
-  overflow-x: hidden;
+  overflow: hidden;
 
   @media (max-width: $tablet) {
-    padding: 0 45px;
+    padding-bottom: 100px;
   }
 
   @media (max-width: $mobile) {
-    padding: 0 47px;
-  }
-}
-
-.slider__wrapper {
-  padding: 0 103px;
-
-  @media (max-width: $mobile) {
-    padding: 0;
+    padding-bottom: 70px;
   }
 }

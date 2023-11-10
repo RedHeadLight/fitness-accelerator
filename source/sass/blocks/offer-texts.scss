@@ -25,6 +25,10 @@
   display: block;
   margin-bottom: 25px;
 
+  @media (max-width: $tablet) {
+    margin-bottom: 15px;
+  }
+
   @media (max-width: $mobile) {
     margin-bottom: 20px;
     font-size: 64px;
@@ -47,7 +51,6 @@
 }
 
 .offer-texts__button {
-  width: 79px;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -55,17 +58,35 @@
   text-transform: uppercase;
   color: #FFF;
   margin-top: auto;
-  padding: 10px;
-  text-decoration: underline;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  position: relative;
+  align-self: flex-start;
+
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    border-bottom: 1px solid currentColor;
+  }
 
   &:hover {
     opacity: 0.8;
   }
 
   &:focus {
-    border: 1px solid #FFF;
-    width: 99px;
-    text-decoration: none;
+    &::before {
+      width: calc(100% + 10px);
+      left: -5px;
+      height: calc(100% + 10px);
+      border: 1px solid currentColor;
+    }
   }
 
   &:disabled, &--disabled {

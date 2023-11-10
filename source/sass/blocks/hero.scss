@@ -1,32 +1,55 @@
 .hero {
-  background-image: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
-  padding-top: 86px;
+  background-image: linear-gradient(90deg, #1C3477 0%, #1C3477 0%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+  padding-top: 87px;
   width: 100%;
 }
 
 .hero__container {
-  padding: 0 308px 120px 81px;
+  padding: 0 245px 120px 15px;
   display: flex;
   gap: 70px;
+  justify-content: space-between;
 
   @media (max-width: $tablet) {
     padding-left: 45px;
     padding-right: 45px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 324px;
+    gap: 30px;
   }
 
   @media (max-width: $mobile) {
     padding: 0 15px;
+    display: block;
   }
 }
 
 .hero__text-block {
-  width: 40%;
+  text-align: right;
+  padding-top: 61px;
+
   @media (max-width: $tablet) {
-    width: 50%;
+    padding-top: 30px;
   }
   @media (max-width: $mobile) {
+    position: relative;
     width: 100%;
     padding-bottom: 186px;
+    padding-top: 34px;
+  }
+}
+
+.hero__container picture,
+.hero__container img {
+  flex-shrink: 0;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
   }
 }
 

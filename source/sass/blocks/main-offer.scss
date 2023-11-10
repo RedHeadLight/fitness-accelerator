@@ -3,10 +3,12 @@
   flex-direction: column;
   background-color: #ED0233;
   color: #FFF;
-  padding: 40px 45px 45px 45px;
+  padding: 40px 45px 47px;
 
   @media (max-width: $mobile) {
     justify-items: center;
+    padding-top: 45px;
+    padding-bottom: 53px;
   }
 }
 
@@ -17,7 +19,7 @@
   @media (max-width: $tablet) {
     width: 100%;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 279px 1fr;
   }
 
   @media (max-width: $mobile) {
@@ -30,5 +32,11 @@
   @media (max-width: $tablet) {
     display: block;
     width: 100%;
+    aspect-ratio: 399/462;
+    object-fit: cover;
+  }
+
+  @media (max-width: $mobile) {
+    aspect-ratio: 290/330;
   }
 }
