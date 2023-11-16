@@ -33,13 +33,13 @@
           <div class="text-block__wrapper">
             <span class="text-block__subtitle">Омск</span>
             <h2 class="text-block__title">Фитнес центр</h2>
-            <a href="#" class="text-block__button">Купить абонемент</a>
+            <a href="#subscriptions" class="text-block__button">Купить абонемент</a>
           </div>
         </div>
         <picture>
-          <source media="(min-width: 1366px)" srcset="./img/hero-banner-desktop.jpg">
-          <source media="(max-width: 1365px)" srcset="./img/hero-banner-tablet.jpg">
-          <source media="(max-width: 767)" srcset="./img/hero-banner-mobile.jpg">
+          <source media="(min-width: 1366px)" srcset="./img/hero-banner-desktop.jpg, ./img/hero-banner-desktop@2x.webp 2x">
+          <source media="(max-width: 1365px)" srcset="./img/hero-banner-tablet.jpg, ./img/hero-banner-tablet@2x.webp 2x">
+          <source media="(max-width: 767)" srcset="./img/hero-banner-mobile.jpg, ./img/hero-banner-mobile@2x.webp 2x">
           <img src="./img/hero-banner-desktop.jpg" width="500" height="524" alt="Заглавное фото сайта">
         </picture>
       </div>
@@ -58,9 +58,9 @@
         </div>
         <div class="about__image-wrapper">
           <picture>
-            <source media="(min-width: 1366px)" srcset="./img/about-banner-desktop.jpg">
-            <source media="(max-width: 1365px)" srcset="./img/about-banner-tablet.jpg">
-            <source media="(max-width: 767)" srcset="./img/about-banner-mobile.jpg">
+            <source media="(min-width: 1366px)" srcset="./img/about-banner-desktop.jpg, ./img/about-banner-desktop@2x.webp 2x">
+            <source media="(max-width: 1365px)" srcset="./img/about-banner-tablet.jpg, ./img/about-banner-tablet@2x.webp 2x"">
+            <source media="(max-width: 767)" srcset="./img/about-banner-mobile.jpg, ./img/about-banner-mobile@2x.webp 2x"">
             <img src="./img/about-banner-desktop.jpg" width="660" height="401"alt="фото тренажерного зала">
           </picture>
         <div class="about__video video">
@@ -70,7 +70,7 @@
             <source media="(max-width: 767)" srcset="./img/video-mobile.jpg">
             <img src="./img/video-desktop.jpg" width="364" height="228">
           </picture>
-          <a class="video__play-button" href="#">
+          <a class="video__play-button" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
             <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 6L4.64275e-07 11.1962L9.18537e-07 0.803847L9 6Z"/>
               </svg>
@@ -79,15 +79,15 @@
       </div>
         </div>
     </section>
-    <section class="subscriptions">
+    <section class="subscriptions"id="subscriptions">
       <div class="subscriptions__wrapper container">
         <h2 class="subscriptions__title">Абонементы</h2>
         <ul class="subscriptions__term-options term-options">
-          <li class="term-options__value term-options__value--current"><button type="button">1 месяц</button></li>
-          <li class="term-options__value"><button type="button">6 месяцев</button></li>
-          <li class="term-options__value"><button type="button">12 месяцев</button></li>
+          <li class="term-options__value term-options__value--current"><button class="one-month-btn" type="button">1 месяц</button></li>
+          <li class="term-options__value"><button class="half-year-btn" type="button">6 месяцев</button></li>
+          <li class="term-options__value"><button class="full-year-btn" type="button">12 месяцев</button></li>
         </ul>
-        <ul class="subscriptions__card subscriptions-card">
+        <ul class="subscriptions__card subscriptions-card subscriptions-card--current one-month-cards">
           <li class="subscriptions-card__item">
             <h2 class="subscriptions-card__title">С тренером</h2>
             <span class="subscriptions-card__subtitle">12 занятий</span>
@@ -140,6 +140,112 @@
             <a href="#" class="subscriptions-card__button">Купить абонемент</a>
           </li>
         </ul>
+        <ul class="subscriptions__card subscriptions-card half-year-cards">
+          <li class="subscriptions-card__item">
+            <h2 class="subscriptions-card__title">С тренером</h2>
+            <span class="subscriptions-card__subtitle">12 занятий</span>
+            <div class="subscriptions-card__price-block" data-price="30000">
+              <span class="subscriptions-card__price">30000</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                  fill="#102654" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                  fill="#102654" />
+              </svg>
+            </div>
+            <a href="#" class="subscriptions-card__button">Купить абонемент</a>
+          </li>
+          <li class="subscriptions-card__item">
+            <h2 class="subscriptions-card__title">Дневной</h2>
+            <span class="subscriptions-card__subtitle">с 8:00 до 17:00</span>
+            <div class="subscriptions-card__price-block" data-price="10200">
+              <span class="subscriptions-card__price">10200</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                fill="#102654" />
+            </svg>
+            </div>
+            <a href="#" class="subscriptions-card__button">Купить абонемент</a>
+          </li>
+          <li class="subscriptions-card__item">
+            <h2 class="subscriptions-card__title">Полный день</h2>
+            <span class="subscriptions-card__subtitle">с 8:00 до 22:00</span>
+            <div class="subscriptions-card__price-block" data-price="16200">
+              <span class="subscriptions-card__price">16200</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                fill="#102654" />
+            </svg>
+            </div>
+            <a href="#" class="subscriptions-card__button">Купить абонемент</a>
+          </li>
+        </ul>
+        <ul class="subscriptions__card subscriptions-card full-year-cards">
+          <li class="subscriptions-card__item">
+            <h2 class="subscriptions-card__title">С тренером</h2>
+            <span class="subscriptions-card__subtitle">12 занятий</span>
+            <div class="subscriptions-card__price-block" data-price="60000">
+              <span class="subscriptions-card__price">60000</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                  fill="#102654" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                  fill="#102654" />
+              </svg>
+            </div>
+            <a href="#" class="subscriptions-card__button">Купить абонемент</a>
+          </li>
+          <li class="subscriptions-card__item">
+            <h2 class="subscriptions-card__title">Дневной</h2>
+            <span class="subscriptions-card__subtitle">с 8:00 до 17:00</span>
+            <div class="subscriptions-card__price-block" data-price="20400">
+              <span class="subscriptions-card__price">20400</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                fill="#102654" />
+            </svg>
+            </div>
+            <a href="#" class="subscriptions-card__button">Купить абонемент</a>
+          </li>
+          <li class="subscriptions-card__item">
+            <h2 class="subscriptions-card__title">Полный день</h2>
+            <span class="subscriptions-card__subtitle">с 8:00 до 22:00</span>
+            <div class="subscriptions-card__price-block" data-price="32400">
+              <span class="subscriptions-card__price">32400</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                fill="#102654" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                fill="#102654" />
+            </svg>
+            </div>
+            <a href="#" class="subscriptions-card__button">Купить абонемент</a>
+          </li>
+        </ul>
       </div>
       <picture>
         <source media="(min-width: 1366px)" srcset="./img/subscriptions-banner-desktop.png">
@@ -172,9 +278,9 @@
           <a href="#" class="games-texts__button">заполнить заявку</a>
         </div>
         <picture>
-          <source media="(min-width: 1366px)" srcset="./img/games-banner-desktop.jpg">
-          <source media="(max-width: 1365px)" srcset="./img/games-banner-tablet.jpg">
-          <source media="(max-width: 767)" srcset="./img/games-banner-mobile.jpg">
+          <source media="(min-width: 1366px)" srcset="./img/games-banner-desktop.jpg, ./img/games-banner-desktop@2x.webp 2x">
+          <source media="(max-width: 1365px)" srcset="./img/games-banner-tablet.jpg, ./img/games-banner-tablet@2x.webp 2x">
+          <source media="(max-width: 767)" srcset="./img/games-banner-mobile.jpg, ./img/games-banner-mobile@2x.webp 2x">
           <img src="./img/games-banner-desktop.jpg" width="660" height="500"alt="Рекламное фото спортивных игр">
         </picture>
       </div>
@@ -380,8 +486,12 @@
               <span class="offer-texts__description">Безлимитный абонемент в тренажерный зал</span>
               <a href="#" class="offer-texts__button offer-button">подробнее</a>
             </div>
-            <img src="./img/offers-banner-desktop.jpg" width="280" height="462"
-              alt="Рекламный баннер раздела сайта акции">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="./img/offers-banner-desktop.jpg, ./img/offers-banner-desktop@2x.webp 2x">
+              <source media="(max-width: 1365px)" srcset="./img/offers-banner-tablet.jpg, ./img/offers-banner-tablet@2x.webp 2x">
+              <source media="(max-width: 767)" srcset="./img/offers-banner-mobile.jpg, ./img/offers-banner-mobile@2x.webp 2x">
+              <img src="./img/offers-banner-desktop.jpg" width="280" height="462" alt="Рекламный баннер раздела сайта акции">
+            </picture>
           </div>
           <div class="offers-block__extra-offers extra-offers">
             <div class="extra-offers__item extra-item">
@@ -423,13 +533,58 @@
               <button class="faq-questions__title" type="button">Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</span>
             </li>
           </ul>
+          <ul class="faq__question-list faq-questions">
+            <li class="faq-questions__item faq-questions__item faq-question">
+              <button class="faq-questions__title" type="button">Занятия с тренером входят в абонемент?</button>
+              <p class="faq-questions__description">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+            </li>
+            <li class="faq-questions__item">
+              <button class="faq-questions__title" type="button">Можно ли заморозить абонемент?</button>
+            </li>
+            <li class="faq-questions__item">
+              <span class="faq-questions__title">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</span>
+            </li>
+            <li class="faq-questions__item">
+              <button class="faq-questions__title" type="button">Что такое семейный доступ и доступ для друзей?</span>
+            </li>
+          </ul>
+          <ul class="faq__question-list faq-questions">
+            <li class="faq-questions__item faq-questions__item faq-question">
+              <button class="faq-questions__title" type="button">Как стать членом фитнес-центра?</button>
+              <p class="faq-questions__description">При первом посещении и покупке абонемента, необходимо заполнить анкету&nbsp;и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам&nbsp;на почту.</p>
+            </li>
+            <li class="faq-questions__item">
+              <button class="faq-questions__title" type="button">Где можно посмотреть расписание?</button>
+            </li>
+            <li class="faq-questions__item">
+              <span class="faq-questions__title">Есть кулеры в центре? Предоставляются полотенца?</span>
+            </li>
+            <li class="faq-questions__item">
+              <button class="faq-questions__title" type="button">Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</span>
+            </li>
+          </ul>
+          <ul class="faq__question-list faq-questions">
+            <li class="faq-questions__item faq-questions__item faq-question">
+              <button class="faq-questions__title" type="button">Есть в фитнес-центре дресс-код?</button>
+              <p class="faq-questions__description">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+            </li>
+            <li class="faq-questions__item">
+              <button class="faq-questions__title" type="button">Можно ли приводить с собой детей на тренировки?</button>
+            </li>
+            <li class="faq-questions__item">
+              <span class="faq-questions__title">Какие дополнительные правила посещения центра?</span>
+            </li>
+            <li class="faq-questions__item">
+              <button class="faq-questions__title" type="button">Нужна ли медицинская справка для посещения залов и бассейна?</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper container">
         <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__slider reviews-slider">
+        <div class="reviews__slider reviews-slider swiper" data-review-swiper>
           <div class="reviews-slider__card review-card">
             <img src="./img/review-user.jpg" width="80" height="80" alt="аватар пользователя">
             <div class="review-card__text-wrapper">
@@ -437,6 +592,26 @@
               <p class="review-card__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры
                 обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </div>
+          </div>
+          <div class="reviews-slider__card review-card">
+            <img src="./img/review-user.jpg" width="80" height="80" alt="аватар пользователя">
+            <div class="review-card__text-wrapper">
+              <span class="review-card__name">Анна Орлова</span>
+              <p class="review-card__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+          <div class="reviews-slider__buttons">
+            <button class="reviews-slider__btn reviews-slider__btn--prev" type="button" data-review-slider-btn-prev>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none">
+                <path d="M17 1L0.999999 17L17 33" stroke="#102654"/>
+                </svg>
+            </button>
+            <button class="reviews-slider__btn reviews-slider__btn--next" type="button" data-review-slider-btn-next>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none">
+                <path d="M1 1L17 17L1 33" stroke="#102654"/>
+                </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -446,12 +621,12 @@
     <div class="footer__wrapper container">
       <div class="footer__form form-block">
         <h2 class="form-block__title">Бесплатное занятие </h2>
-        <form action="https://echo.htmlacademy.ru">
+        <form action="https://echo.htmlacademy.ru" data-form>
           <div class="form-block__wrapper">
             <label for="name">Имя</label>
-          <input type="text" id="name" name="user-name" placeholder="Имя">
+          <input type="text" id="name" name="user-name" minlength="1" placeholder="Имя" required data-username>
           <label for="tel">Телефон</label>
-          <input type="text" id="tel" name="user-tel" placeholder="Телефон">
+          <input type="text" id="tel" name="user-tel" placeholder="Телефон" required data-phone-number>
           </div>
           <button class="form-block__button" type="submit">Отправить</button>
         </form>

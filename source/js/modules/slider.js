@@ -28,15 +28,5 @@ const initSlider = () => {
 }
 
 
-// написать логику функции slideNext
-// buttonNext.addEventListener('click', () => {
-//   swiperEl.swiper.slideNext();
-// });
-// // написать логику функции slidePrev
-// buttonPrev.addEventListener('click', () => {
-//   swiperEl.swiper.slidePrev();
-// });
-
-
 export { initSlider }
 

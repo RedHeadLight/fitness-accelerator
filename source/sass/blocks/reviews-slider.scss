@@ -1,0 +1,25 @@
+.reviews-slider__buttons{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  border-color: transparent;
+}
+
+.reviews-slider__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.reviews-slider__btn--prev {
+  position: absolute;
+  left: 229px;
+}
+
+.reviews-slider__btn--next {
+  position: absolute;
+  right: 229px;
+}

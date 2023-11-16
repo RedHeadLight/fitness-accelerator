@@ -41,6 +41,8 @@
 }
 
 .reviews__slider {
+  position: relative;
+
   @media (max-width: $mobile) {
     padding: 0 32px;
   }
