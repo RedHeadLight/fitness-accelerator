@@ -37,6 +37,7 @@
 .slider-block__btn {
   border: none;
   background-color: transparent;
+  user-select: none;
 }
 
 .slider-block__btn--prev {

@@ -3,13 +3,13 @@
   display: flex;
   padding: 59px;
   gap: 30px;
-  max-width: 560px;
+  width: 100%;
+  flex-shrink: 0;
   margin: 0 auto;
   background-color: #1C3374;
   box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.20);
 
   @media (max-width: $tablet) {
-    max-width: 580px;
     padding: 59px 65px 60px;
   }
 

@@ -120,6 +120,7 @@
   text-transform: uppercase;
   width: 205px;
   letter-spacing: 0.6px;
+  user-select: none;
 
   @media (max-width: $tablet) {
     margin-top: 4px;

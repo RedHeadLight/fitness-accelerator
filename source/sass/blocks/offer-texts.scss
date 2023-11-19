@@ -62,6 +62,7 @@
   text-decoration: none;
   position: relative;
   align-self: flex-start;
+  user-select: none;
 
   @media (max-width: $mobile) {
     margin: 0 auto;

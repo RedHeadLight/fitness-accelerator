@@ -45,16 +45,23 @@
 }
 
 .subscriptions__card {
-  display: flex;
   gap: 40px;
   justify-content: center;
   margin: 0;
+  display: none;
 
   @media (max-width: $tablet) {
-    display: block;
     max-width: 460px;
     margin: 0 auto;
     justify-items: center;
+  }
+}
+
+.subscriptions__card.is-active {
+  display: flex;
+
+  @media (max-width: $tablet) {
+    display: block;
   }
 }
 

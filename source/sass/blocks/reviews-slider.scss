@@ -1,25 +1,30 @@
 .reviews-slider__buttons{
   position: absolute;
   top: 50%;
-  left: 0;
-  width: 100%;
+  left: -56px;
   transform: translateY(-50%);
   z-index: 1;
-  border: none;
-  border-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 112px);
+
+  @media (max-width: $tablet) {
+    width: calc(100% + 98px);
+    left: -49px;
+  }
+
+  @media (max-width: $tablet) {
+    width: calc(100% + 58px);
+    left: -29px;
+  }
 }
 
 .reviews-slider__btn {
   border: none;
   background-color: transparent;
+  user-select: none;
 }
 
-.reviews-slider__btn--prev {
-  position: absolute;
-  left: 229px;
-}
-
-.reviews-slider__btn--next {
-  position: absolute;
-  right: 229px;
+.reviews-slider__btn.swiper-button-disabled {
+  opacity: 0.3;
 }

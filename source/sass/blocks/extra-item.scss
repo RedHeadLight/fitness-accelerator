@@ -78,6 +78,7 @@
   letter-spacing: 0.7px;
   text-decoration: none;
   color: #1C3374;
+  user-select: none;
 
   @media (max-width: $mobile) {
     margin: 30px auto 0;

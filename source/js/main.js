@@ -4,6 +4,9 @@ import {Form} from './modules/form-validate/form';
 import {Swiper} from './vendor/swiper';
 import {initSlider} from './modules/slider';
 import { renderSlider } from './modules/review-slider';
+import { initFaqTabbs } from './modules/faq-tabbs';
+import { initVideo } from './modules/video';
+import {initAccordions} from './modules/accordion';
 
 
 // ---------------------------------
@@ -23,6 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initSlider();
+    initFaqTabbs();
+    renderSlider();
+    initVideo();
+    initAccordions();
     const form = new Form();
     window.form = form;
     form.init();

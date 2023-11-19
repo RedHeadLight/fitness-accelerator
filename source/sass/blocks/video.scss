@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 
   @media (max-width: $tablet) {
     width: 72px;
@@ -105,5 +106,35 @@
   @media (max-width: $mobile) {
     width: 100%;
     aspect-ratio: 320/167;
+  }
+}
+
+.video iframe {
+  display: none;
+  width: 364px;
+  height: 228px;
+
+  @media (max-width: $tablet) {
+    width: 265px;
+    height: 167px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    aspect-ratio: 320/167;
+  }
+}
+
+.video--active {
+  iframe {
+    display: block;
+  }
+
+  picture, img {
+    display: none;
+  }
+
+  .video__play-button {
+    display: none;
   }
 }

@@ -34,7 +34,7 @@
   }
 }
 
-.term-options__value--current {
+.term-options__value:has(.is-active) {
   position: relative;
 
   button {

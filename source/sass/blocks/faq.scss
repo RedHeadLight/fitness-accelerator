@@ -77,10 +77,6 @@
   }
 }
 
-.faq-questions__item:not(.faq-questions__item--current) .faq-questions__title {
-  margin-bottom: 8px;
-
-  @media (max-width: $mobile) {
-    margin-bottom: 0;
-  }
+.faq__question-list-wrapper {
+  width: 100%;
 }

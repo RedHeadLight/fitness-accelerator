@@ -40,10 +40,14 @@
   }
 }
 
-.reviews__slider {
+.reviews__slider-wrapper {
   position: relative;
-
+  margin: 0 auto;
+  width: 560px;
+  @media (max-width: $tablet) {
+    width: 580px;
+  }
   @media (max-width: $mobile) {
-    padding: 0 32px;
+    width: 226px;
   }
 }
