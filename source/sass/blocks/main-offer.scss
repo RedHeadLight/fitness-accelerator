@@ -1,8 +1,8 @@
 .main-offer__texts {
   display: flex;
   flex-direction: column;
-  background-color: #ED0233;
-  color: #FFF;
+  background-color: #ed0233;
+  color: #ffffff;
   padding: 40px 45px 47px;
 
   @media (max-width: $mobile) {
@@ -28,12 +28,13 @@
 }
 
 .main-offer img {
+  height: 100%;
+  object-fit: cover;
 
   @media (max-width: $tablet) {
     display: block;
     width: 100%;
     aspect-ratio: 399/462;
-    object-fit: cover;
   }
 
   @media (max-width: $mobile) {

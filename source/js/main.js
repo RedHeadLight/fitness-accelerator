@@ -1,11 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+/* eslint-disable */
 import {Swiper} from './vendor/swiper';
+/* eslint-enable */
 import {initSlider} from './modules/slider';
-import { renderSlider } from './modules/review-slider';
-import { initFaqTabbs } from './modules/faq-tabbs';
-import { initVideo } from './modules/video';
+import {renderSlider} from './modules/review-slider';
+import {initFaqTabbs} from './modules/faq-tabbs';
+import {initVideo} from './modules/video';
 import {initAccordions} from './modules/accordion';
 
 

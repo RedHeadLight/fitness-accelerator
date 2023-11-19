@@ -18,7 +18,7 @@
   svg {
     position: relative;
     z-index: 1;
-    fill: #FFF;
+    fill: #ffffff;
   }
 
   &::after {
@@ -28,7 +28,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    border: 2px solid #ED0233;
+    border: 2px solid #ed0233;
     opacity: 0.2;
     border-radius: 100%;
   }
@@ -41,7 +41,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
     border-radius: 100%;
 
     @media (max-width: $tablet) {
@@ -50,13 +50,14 @@
     }
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     svg {
       fill: #102654;
     }
 
     &::before {
-      background: #FFF;
+      background: #ffffff;
     }
 
     &::after {
@@ -65,7 +66,6 @@
   }
 
   &:active {
-
     svg {
       fill: #102654;
     }
@@ -73,7 +73,7 @@
     &::before {
       width: 58px;
       height: 58px;
-      background: #FFF;
+      background: #ffffff;
     }
 
     &::after {
@@ -81,7 +81,8 @@
     }
   }
 
-  &:disabled, &--disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
   }
 }
@@ -106,6 +107,7 @@
   @media (max-width: $mobile) {
     width: 100%;
     aspect-ratio: 320/167;
+    height: auto;
   }
 }
 
@@ -113,6 +115,7 @@
   display: none;
   width: 364px;
   height: 228px;
+  border: none;
 
   @media (max-width: $tablet) {
     width: 265px;
@@ -130,7 +133,8 @@
     display: block;
   }
 
-  picture, img {
+  picture,
+  img {
     display: none;
   }
 

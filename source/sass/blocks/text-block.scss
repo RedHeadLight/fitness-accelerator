@@ -1,5 +1,5 @@
 .text-block__description {
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   font-size: 14px;
   line-height: 22px;
@@ -29,11 +29,11 @@
 }
 
 .text-block__subtitle {
-  font-family: 'Alumni Sans';
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   line-height: 54px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1.62px;
 
@@ -50,13 +50,12 @@
 }
 
 .text-block__title {
-  font-family: 'Alumni Sans';
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 92px;
   line-height: 110px;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: end;
-  margin: 0;
   text-transform: uppercase;
   margin: 10px 0 0;
   letter-spacing: 4.6px;
@@ -76,8 +75,8 @@
 }
 
 .text-block__button {
-  color: #FFF;
-  border: 2px solid #FFF;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
@@ -105,21 +104,22 @@
   }
 
   &:hover {
-    background-color: #FFF;
-    color: #103AAE;
+    background-color: #ffffff;
+    color: #103aae;
   }
 
   &:focus {
-    background-color: #FFF;
-    color: #103AAE;
+    background-color: #ffffff;
+    color: #103aae;
   }
 
   &:active {
-    background-color: #FFF;
+    background-color: #ffffff;
     color: #102654;
   }
 
-  &:disabled, &--disabled{
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
   }
 }

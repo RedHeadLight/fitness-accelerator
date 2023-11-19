@@ -17,13 +17,12 @@
 .about__video {
   position: absolute;
   right: 359px;
-  top: 288px;
+  bottom: 0;
 
   @media (max-width: $tablet) {
     right: initial;
     left: 50%;
     transform: translateX(-50%);
-    top: 261px;
   }
 
   @media (max-width: $mobile) {
@@ -81,7 +80,6 @@
   @media (max-width: $tablet) {
     width: 100%;
   }
-
 }
 
 .about__image-wrapper img {

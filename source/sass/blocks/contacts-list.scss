@@ -1,16 +1,11 @@
 .contacts-list__wrapper {
   position: relative;
   width: 170px;
-
-  @media (max-width: $tablet) {
-  }
-
-  @media (max-width: $mobile) {
-  }
+  flex-grow: 1;
 
   & + &::after {
-    content: " ";
-    background-color: #74819C;
+    content: "";
+    background-color: #74819c;
     width: 1px;
     height: 117px;
     position: absolute;
@@ -24,11 +19,8 @@
   }
 }
 
-.contacts-list__item  {
+.contacts-list__item {
   display: block;
-
-  @media (max-width: $tablet) {
-  }
 
   & + & {
     margin-top: 14px;

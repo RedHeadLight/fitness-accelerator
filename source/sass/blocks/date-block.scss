@@ -1,5 +1,5 @@
 .date-block__heading {
-  font-family: 'Alumni Sans';
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 82px;
   line-height: 76px;
   font-weight: 600;
@@ -57,6 +57,7 @@
     margin-top: 2px;
   }
 }
+
 .date-block__container {
   display: flex;
   align-items: flex-start;
@@ -70,7 +71,7 @@
 
   @media (max-width: $tablet) {
     align-items: flex-start;
-    gap: 0px;
+    gap: 0;
     margin-bottom: 8px;
   }
 }

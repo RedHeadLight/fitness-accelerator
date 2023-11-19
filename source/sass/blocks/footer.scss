@@ -1,7 +1,5 @@
 .footer {
-  @media (max-width: $mobile) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 .footer__form {
@@ -21,7 +19,7 @@
 }
 
 .footer__bradcrumbs {
-  background-color: #030A1A;
+  background-color: #030a1a;
   padding-top: 38px;
   padding-bottom: 41px;
 

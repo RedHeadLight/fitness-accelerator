@@ -1,5 +1,5 @@
 .about-texts__title {
-  font-family: 'Alumni Sans';
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   line-height: 1;
   font-weight: 600;
@@ -25,7 +25,7 @@
 
   @media (max-width: $tablet) {
     font-size: 20px;
-  line-height: 20px;
+    line-height: 20px;
   }
 
   @media (max-width: $mobile) {
@@ -76,5 +76,7 @@
 
   @media (max-width: $mobile) {
     margin-top: 36px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

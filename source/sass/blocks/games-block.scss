@@ -1,5 +1,5 @@
 .games-block {
-  color: #FFF;
+  color: #ffffff;
 
   @media (max-width: $tablet) {
     padding: 100px 0;
@@ -11,7 +11,7 @@
 }
 
 .games-block__texts {
-  background-color: #ED0233;
+  background-color: #ed0233;
   width: 43%;
   display: grid;
   padding: 80px;
@@ -69,6 +69,11 @@
   object-fit: cover;
 
   @media (max-width: $mobile) {
-    aspect-ratio: 290/292
+    aspect-ratio: 290/292;
   }
+}
+
+.games-block__container picture,
+.games-block__container img {
+  flex-grow: 1;
 }

@@ -4,7 +4,7 @@
   flex-shrink: 0;
   gap: 8px;
 
-  @media (max-width: $tablet)  {
+  @media (max-width: $tablet) {
     display: flex;
     gap: 10px;
     width: 100%;
@@ -20,7 +20,7 @@
 }
 
 .faq-tabbs__item {
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   background-color: transparent;
   padding: 18px;
   font-size: 18px;
@@ -50,16 +50,17 @@
   }
 
   &:active {
-    background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-    color: #FFF;
+    background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: #ffffff;
   }
 
-  &:disabled, &--disabled {
-    color: #C8C9CC;
+  &:disabled,
+  &--disabled {
+    color: #c8c9cc;
   }
 }
 
 .faq-tabbs__item.is-active {
-  background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-  color: #FFF;
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
 }

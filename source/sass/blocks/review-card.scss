@@ -1,13 +1,13 @@
 .review-card {
-  color: #FFF;
+  color: #ffffff;
   display: flex;
   padding: 59px;
   gap: 30px;
   width: 100%;
   flex-shrink: 0;
   margin: 0 auto;
-  background-color: #1C3374;
-  box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.20);
+  background-color: #1c3374;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 
   @media (max-width: $tablet) {
     padding: 59px 65px 60px;

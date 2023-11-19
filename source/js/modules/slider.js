@@ -3,7 +3,9 @@ const initSlider = () => {
   const buttonPrev = document.querySelector('[data-slider-btn-prev]');
   const buttonNext = document.querySelector('[data-slider-btn-next]');
 
-  const swiper = new Swiper((swiperEl), {
+  /* eslint-disable */
+  const swiper = new Swiper(swiperEl, {
+  /* eslint-enable */
     loop: true,
     navigation: {
       nextEl: buttonNext,
@@ -23,10 +25,10 @@ const initSlider = () => {
         slidesPerView: 4,
         spaceBetween: 40,
       },
-    }
-  })
-}
+    },
+  });
 
+  return swiper;
+};
 
-export { initSlider }
-
+export {initSlider};

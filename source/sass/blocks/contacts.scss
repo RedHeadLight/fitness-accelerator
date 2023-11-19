@@ -1,6 +1,6 @@
 .contacts__title {
   color: #102654;
-  font-family: 'Alumni Sans';
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
@@ -11,7 +11,6 @@
   @media (max-width: $tablet) {
     font-size: 42px;
     line-height: 42px;
-    text-align: center;
     margin: 0;
     text-align: start;
   }

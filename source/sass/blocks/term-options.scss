@@ -24,6 +24,7 @@
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   line-height: 1;
+  user-select: none;
 
   @media (max-width: $tablet) {
     font-size: 18px;
@@ -38,16 +39,16 @@
   position: relative;
 
   button {
-  color: #102654;
+    color: #102654;
 
     &::before {
       content: " ";
-      background-color: #D10A42;
+      background-color: #d10a42;
       width: 67px;
       height: 1px;
       position: absolute;
-      left: 0px;
-      bottom: 0px;
+      left: 0;
+      bottom: 0;
     }
   }
 }

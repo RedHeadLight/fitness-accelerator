@@ -1,12 +1,12 @@
 .main-feature {
-  color: #FFF;
-  background-color: #1C3374;
+  color: #ffffff;
+  background-color: #1c3374;
   padding: 70px 34px 78px;
   text-align: center;
   gap: 12px;
   margin-top: 4px;
 
-  @media (max-width: $tablet)  {
+  @media (max-width: $tablet) {
     padding: 35px;
     gap: 25px;
     width: 100%;
