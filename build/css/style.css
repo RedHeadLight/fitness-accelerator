@@ -4610,7 +4610,6 @@ body {
   .reviews__buttons {
     width: calc(100% + 58px);
     left: -29px;
-    position: relative;
   }
 }
 
@@ -4622,6 +4621,12 @@ body {
       -ms-user-select: none;
           user-select: none;
 }
+@media (max-width: 767px) {
+  .reviews__btn {
+    width: 10px;
+    height: 19px;
+  }
+}
 .reviews__btn:hover {
   border: 1px solid #102654;
   border-radius: 100%;
@@ -4630,46 +4635,21 @@ body {
   border: 1px solid #102654;
   border-radius: 100%;
 }
+.reviews__btn:active {
+  border: 1px solid #102654;
+  border-radius: 100%;
+  background-color: #102654;
+  background-size: 56px 56px;
+}
 
 .reviews__btn.swiper-button-disabled {
   opacity: 0.3;
 }
 
-.reviews__btn--prev::before {
-  content: "";
-  left: 2px;
-  bottom: 156px;
-  position: absolute;
-  background-image: url("../img/svg/mobile-stroke-prev.svg");
-  width: 10px;
-  height: 19px;
-}
-.reviews__btn--prev::before:active {
-  background-image: url("../img/svg/stroke-background-prev.svg");
-}
-
-@media (max-width: 767px) {
-  .reviews__btn--next::after {
-    content: "";
-    right: 2px;
-    bottom: 156px;
-    position: absolute;
-    background-image: url("../img/svg/mobile-stroke-next.svg");
-    width: 10px;
-    height: 19px;
-  }
-  .reviews__btn--next:active::after {
-    background-image: url("../img/svg/stroke-backgound-next.svg");
-    width: 56px;
-    height: 56px;
-    background-color: #102654;
-    border-radius: 100%;
-  }
-}
-
 @media (max-width: 767px) {
   .reviews__btn svg {
-    display: none;
+    width: 10px;
+    height: 19px;
   }
 }
 
