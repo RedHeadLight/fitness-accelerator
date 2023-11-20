@@ -4,11 +4,17 @@
   background-color: #ed0233;
   color: #ffffff;
   padding: 40px 45px 47px;
+  width: 50%;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 
   @media (max-width: $mobile) {
     justify-items: center;
     padding-top: 45px;
     padding-bottom: 53px;
+    width: 100%;
   }
 }
 

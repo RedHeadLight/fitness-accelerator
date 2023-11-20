@@ -31,14 +31,15 @@
   color: #102654;
   display: flex;
   justify-content: space-between;
+  gap: 112px;
 
   @media (max-width: $tablet) {
     padding: 100px 133px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 44px;
     width: 100%;
     justify-content: stretch;
-    gap: 141px;
+    gap: 33px;
   }
 
   @media (max-width: $mobile) {
