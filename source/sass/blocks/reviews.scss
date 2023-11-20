@@ -59,21 +59,21 @@
 .reviews__buttons {
   position: absolute;
   top: 50%;
-  left: -56px;
+  left: -76px;
   transform: translateY(-50%);
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  width: calc(100% + 112px);
+  width: calc(100% + 152px);
 
   @media (max-width: $tablet) {
-    width: calc(100% + 113px);
-    left: -57px;
+    width: calc(100% + 137px);
+    left: -69px;
   }
 
   @media (max-width: $mobile) {
-    width: calc(100% + 58px);
-    left: -29px;
+    width: calc(100% + 88px);
+    left: -44px;
   }
 }
 
@@ -81,38 +81,63 @@
   border: none;
   background-color: transparent;
   user-select: none;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: $mobile) {
-    width: 10px;
-    height: 19px;
+    width: 50px;
+    height: 50px;
   }
 
-  &:hover {
-    border: 1px solid #102654;
-    border-radius: 100%;
+  svg {
+    stroke: #102654;
+
+    @media (max-width: $mobile) {
+      width: 10px;
+      height: 19px;
+    }
   }
 
+  &:hover,
   &:focus {
-    border: 1px solid #102654;
-    border-radius: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #102654;
+      border-radius: 100%;
+      z-index: -1;
+    }
   }
 
   &:active {
-    border: 1px solid #102654;
-    border-radius: 100%;
-    background-color: #102654;
-    background-size: 56px 56px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #102654;
+      border-radius: 100%;
+      background-color: #102654;
+      background-size: 56px 56px;
+      z-index: -1;
+    }
+
+    svg {
+      stroke: #ffffff;
+    }
   }
 }
 
 .reviews__btn.swiper-button-disabled {
   opacity: 0.3;
-}
-
-.reviews__btn svg {
-
-  @media (max-width: $mobile) {
-    width: 10px;
-    height: 19px;
-  }
 }
